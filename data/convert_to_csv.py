@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取（严格匹配大小写和空格，用绝对路径最稳）
-file_path = r"D:\GlobalSuperstore\data_analysis_projects\superstore-analysisi\data\global superstore.xls"
+file_path = r"D:\projectB-superstore-profit-dashboard\data\global superstore.xls"
 df = pd.read_excel(file_path, sheet_name="Orders", engine="xlrd")
 
 # 转存 CSV 到 data 文件夹（同目录）

@@ -56,7 +56,7 @@ python analysis_b.py
 ### 各地区利润对比
 > Central 地区利润最高（接近 300,000），North 次之；Canada、Southeast Asia 等地区利润较低。
 
-![各地区利润对比](output/discount_margin_scatter.png)
+![各地区利润对比](output/region_profit.png)
 
 ### 折扣与利润率关系
 > 散点图展示折扣力度与利润率的相关性，识别"高折扣低利润"的优化区间。

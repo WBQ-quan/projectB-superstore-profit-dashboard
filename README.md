@@ -1,29 +1,26 @@
 # Project B: Superstore Profit Dashboard
 
 ## 项目简介
-基于 Superstore 销售数据的端到端利润分析，通过数据清洗、SQL 建模与可视化，定位利润流失核心原因。
-
-## 技术栈
-- **数据处理**：Python (Pandas), SQLite
-- **数据库/查询**：SQLite (`superstore.db`), DBeaver (SQL)
-- **可视化**：Power BI, Matplotlib
-- **工程规范**：Git, `.gitignore` (排除大文件)
+基于全球超市（Superstore）业务数据的利润分析与可视化仪表盘。通过 Python 进行数据清洗与转换，结合 SQL 分析，最终使用 Power BI 呈现多维度利润洞察。
 
 ## 目录结构
-projectB-superstore-profit-dashboard/
-├── data/           # 原始数据 (xls/csv) & 数据库
-├── sql/            # SQL 分析脚本
-├── notebooks/      # Python 分析脚本
-├── output/         # 图表输出 (png)
-├── reports/        # 业务洞察 (md) & Power BI 源文件
-└── README.md
+- `data/`: 原始数据与转换后的 CSV
+- `notebooks/`: Python 数据分析与处理脚本（如 `convert_to_csv.py`）
+- `sql/`: SQL 分析查询语句
+- `output/`: 图表与可视化输出（如利润散点图、区域利润图）
+- `reports/`: 分析报告（Markdown/文档）
+- `*.pbix`: Power BI 仪表盘源文件（已被 .gitignore 过滤，可选保留）
 
-## 核心结论（摘要）
-- 利润低主要集中在某些子类别（如桌子）与特定区域。
-- 高折扣并未带来足够销量增长，反而拉低整体利润率。
-（详细见 `reports/superstore_insights.md`）
+## 核心功能
+- 数据清洗：Excel 转 CSV，统一编码与格式
+- 利润分析：折扣与利润关系、各区域/类别利润表现
+- 可视化：Python 生成静态图表 + Power BI 交互式仪表盘
 
-## 运行说明
-1. 数据已落库至 `data/superstore.db`（本地不提交，见 `.gitignore`）。
-2. SQL 脚本位于 `sql/`，可通过 DBeaver 执行。
-3. Power BI 看板源文件位于 `reports/`（本地不提交）。
+## 使用说明
+1. 克隆仓库：`git clone https://github.com/WBQ-quan/projectB-superstore-profit-dashboard.git`
+2. 运行 `notebooks/convert_to_csv.py` 生成标准 CSV
+3. 查看 `reports/superstore_insights.md` 获取分析结论
+4. 打开 Power BI 文件（若保留）浏览仪表盘
+
+## 技术栈
+Python (Pandas) · SQL · Power BI · Git
